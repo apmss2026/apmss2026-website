@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="APMSS 2026 - Activities and Program">
+    <title>APMSS 2026 - Activities</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <div class="logo-container">
+                    <img src="img/logo.png" alt="APMSS 2026 Logo" class="logo">
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="desktop-nav">
+                    <a href="index.html" class="nav-button">Home</a>
+                    <a href="theme.html" class="nav-button">Theme</a>
+                    <a href="agenda.html" class="nav-button">Agenda</a>
+                    <a href="activities.html" class="nav-button active">Activities</a>
+                    <a href="registration.html" class="nav-button">Registration</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-button" id="mobile-menu-toggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav" id="mobile-nav">
+                <a href="index.html" class="mobile-nav-button">Home</a>
+                <a href="theme.html" class="mobile-nav-button">Theme</a>
+                <a href="agenda.html" class="mobile-nav-button">Agenda</a>
+                <a href="activities.html" class="mobile-nav-button active">Activities</a>
+                <a href="registration.html" class="mobile-nav-button">Registration</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Activities Section -->
+        <section class="section visible">
+            <h1>Activities</h1>
+            <p style="font-size: 1.2rem; text-align: center; margin-bottom: 2rem;">Across one transformative week, delegates will engage in an intensive and multidimensional program featuring:</p>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="background: linear-gradient(135deg, rgba(56, 174, 251, 0.1), rgba(249, 171, 255, 0.1)); padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+                    <h2 style="color: #38AEFB; margin-bottom: 1rem;">🎓 Academic Excellence</h2>
+                    <p><strong>Keynote lectures by world-renowned medical leaders</strong></p>
+                    <p>Learn from distinguished experts who are pioneering breakthroughs in medical research and clinical practice across the Asia-Pacific region.</p>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, rgba(176, 163, 255, 0.1), rgba(249, 171, 255, 0.1)); padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+                    <h2 style="color: #B0A3FF; margin-bottom: 1rem;">🔬 Hands-On Training</h2>
+                    <p><strong>Simulated clinical skills training (OSCE), Interactive workshops, WHO Simulation</strong></p>
+                    <p>Enhance your clinical competencies through state-of-the-art simulation exercises and standardized patient encounters designed by medical education specialists.</p>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, rgba(56, 174, 251, 0.1), rgba(176, 163, 255, 0.1)); padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+                    <h2 style="color: #38AEFB; margin-bottom: 1rem;">🏥 Clinical Exposure</h2>
+                    <p><strong>Exclusive visits to National Taiwan University Hospital</strong></p>
+                    <p>Experience firsthand the cutting-edge medical facilities and innovative patient care approaches at one of Taiwan's premier medical institutions.</p>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, rgba(249, 171, 255, 0.1), rgba(176, 163, 255, 0.1)); padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+                    <h2 style="color: #F9ABFF; margin-bottom: 1rem;">🌏 Cultural Immersion</h2>
+                    <p><strong>Vibrant cultural exchange activities showcasing Taiwan's heritage and community spirit</strong></p>
+                    <p>Discover Taiwan's rich cultural traditions while building meaningful international friendships and professional networks that will last a lifetime.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, rgba(56, 174, 251, 0.05), rgba(249, 171, 255, 0.05)); border-radius: 15px;">
+                <h2 style="color: #565656; margin-bottom: 1rem;">Join Us for an Unforgettable Experience</h2>
+                <p style="font-size: 1.1rem; margin-bottom: 2rem;">Each activity is carefully designed to maximize learning opportunities while fostering international collaboration and cultural understanding among the next generation of medical professionals.</p>
+                <a href="registration.html" class="learn-more-btn">Register Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact us</h3>
+                <p>Gmail: apmss2026@gmail.com</p>
+                <p>Facebook: APMSS - Asia-Pacific Medical Students' Symposium</p>
+                <p>Instagram: apmss_2026</p>
+                <p>Address: National Taiwan University, No.1, Section 4, Roosevelt Road, Taipei City 10617, Republic of China (Taiwan)</p>
+            </div>
+            <div class="footer-section">
+                <h3>Activity information</h3>
+                <p>Organizer: National Taiwan University College of Medicine</p>
+                <p>Activity time: January 26 to January 31, 2026, six days in total</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 APMSS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

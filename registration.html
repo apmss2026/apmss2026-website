@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="APMSS 2026 - Registration Information">
+    <title>APMSS 2026 - Registration</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <div class="logo-container">
+                    <img src="img/logo.png" alt="APMSS 2026 Logo" class="logo">
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="desktop-nav">
+                    <a href="index.html" class="nav-button">Home</a>
+                    <a href="theme.html" class="nav-button">Theme</a>
+                    <a href="agenda.html" class="nav-button">Agenda</a>
+                    <a href="activities.html" class="nav-button">Activities</a>
+                    <a href="registration.html" class="nav-button active">Registration</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-button" id="mobile-menu-toggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav" id="mobile-nav">
+                <a href="index.html" class="mobile-nav-button">Home</a>
+                <a href="theme.html" class="mobile-nav-button">Theme</a>
+                <a href="agenda.html" class="mobile-nav-button">Agenda</a>
+                <a href="activities.html" class="mobile-nav-button">Activities</a>
+                <a href="registration.html" class="mobile-nav-button active">Registration</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Registration Section -->
+        <section class="section visible">
+            <h1>Registration</h1>
+            
+            <!-- Registration Information -->
+            <div class="registration-info">
+                <h2>💡 Information for registration</h2>
+                <div style="margin: 1.5rem 0;">
+                    <div style="background: rgba(56, 174, 251, 0.1); padding: 1rem; border-radius: 10px; margin: 1rem 0; border-left: 4px solid #38AEFB;">
+                        <p><strong>Early Bird:</strong> 7500 NTD</p>
+                    </div>
+                    <div style="background: rgba(249, 171, 255, 0.1); padding: 1rem; border-radius: 10px; margin: 1rem 0; border-left: 4px solid #F9ABFF;">
+                        <p><strong>Early Bird 3-person group:</strong> 7300 NTD</p>
+                    </div>
+                    <div style="background: rgba(176, 163, 255, 0.1); padding: 1rem; border-radius: 10px; margin: 1rem 0; border-left: 4px solid #B0A3FF;">
+                        <p><strong>Early Bird 5-person group:</strong> 7000 NTD</p>
+                    </div>
+                    <div style="background: rgba(209, 209, 209, 0.1); padding: 1rem; border-radius: 10px; margin: 1rem 0; border-left: 4px solid #D1D1D1;">
+                        <p><strong>Accommodation additional:</strong> 4000 NTD</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Accommodation Information -->
+            <div class="accommodation-info">
+                <h2>💡 Information for accommodation</h2>
+                <div style="background: rgba(255, 255, 255, 0.8); padding: 1.5rem; border-radius: 10px; margin: 1rem 0; border: 2px solid #B0A3FF;">
+                    <h3 style="color: #565656; margin-bottom: 1rem;">Fun Inn Taipei Hostel</h3>
+                    <p><strong>Address:</strong> 2F, No.21, Yanping S. Rd., Zhongzheng Dist., Taipei, Taiwan</p>
+                    <p><strong>Phone:</strong> +886-2-2382-1818</p>
+                </div>
+            </div>
+            
+            <!-- Registration Button -->
+            <div style="text-align: center; margin: 3rem 0;">
+                <a href="activities.html" class="learn-more-btn" style="margin-right: 1rem;">Learn more about Activities</a>
+                <br><br>
+                <button onclick="openRegistration()" class="register-btn">
+                    Register Now - Google Form
+                </button>
+                <p style="margin-top: 1rem; color: #565656; font-size: 0.9rem;">
+                    Click the button above to access our official registration form
+                </p>
+            </div>
+            
+            <!-- Important Information -->
+            <div style="background: linear-gradient(135deg, rgba(56, 174, 251, 0.05), rgba(249, 171, 255, 0.05)); padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+                <h2 style="color: #38AEFB; text-align: center; margin-bottom: 1.5rem;">Important Notes</h2>
+                <ul style="max-width: 600px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8;">
+                    <li>Early bird pricing is available for a limited time</li>
+                    <li>Group discounts apply for registrations of 3 or more participants</li>
+                    <li>Accommodation is optional but highly recommended</li>
+                    <li>All prices are in New Taiwan Dollars (NTD)</li>
+                    <li>Registration includes all symposium activities, materials, and meals</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact us</h3>
+                <p>Gmail: apmss2026@gmail.com</p>
+                <p>Facebook: APMSS - Asia-Pacific Medical Students' Symposium</p>
+                <p>Instagram: apmss_2026</p>
+                <p>Address: National Taiwan University, No.1, Section 4, Roosevelt Road, Taipei City 10617, Republic of China (Taiwan)</p>
+            </div>
+            <div class="footer-section">
+                <h3>Activity information</h3>
+                <p>Organizer: National Taiwan University College of Medicine</p>
+                <p>Activity time: January 26 to January 31, 2026, six days in total</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 APMSS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
