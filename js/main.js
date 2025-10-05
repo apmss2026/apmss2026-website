@@ -170,5 +170,5 @@ function smoothNavigate(targetId) {
 
 // External registration link
 function openRegistration() {
-    window.open('https://docs.google.com/forms/d/e/1FAIpQLSe5Occtm1xdaXSEEbvtKO10Pm971S5IKsiBJMPDvpU6_FEVGw/viewform', '_blank');
+    window.open('https://app.hi.events/event/2771/asia-pacific-medical-students-symposium-apmss', '_blank');
 }

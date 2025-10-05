@@ -516,10 +516,10 @@ section {
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
     display: inline-block;
-    margin: 1rem 0;
+    margin: 0rem 0;
     transition: all 0.3s ease;
     position: relative;
-    left: 4px;
+    left: 0px;
 }
 
 .learn-more-btn:hover {
@@ -591,7 +591,7 @@ section {
     border-radius: 50px;
     display: inline-block;
     font-size: 1.2rem;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     transition: all 0.3s ease;
 }
 
