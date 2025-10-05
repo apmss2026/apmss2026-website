@@ -418,6 +418,26 @@ main {
     box-shadow: var(--shadow-md);
     transition: transform 0.3s ease;
 }
+.register-btn1 {
+    background: linear-gradient(135deg, var(--apmss-blue), var(--apmss-pink));
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.6rem;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: var(--shadow-md);
+}
+
+.register-btn1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(56, 174, 251, 0.3);
+}
 
 .more-info-button:hover {
     transform: scale(1.05);
@@ -440,6 +460,7 @@ main {
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-lg);
 }
+
 
 /* Section Styles */
 section {
@@ -491,7 +512,7 @@ section {
     font-weight: 700;
     text-align: center;
     margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-top: 0rem;
 }
 
 .main-title-2 {
