@@ -38,7 +38,7 @@ body {
     --apmss-light-blue: #a4d6f5;
     --apmss-light-purple: #f6a1fb;
     --apmss-light-pink:#f49cfb;
-    --apmss-light-red: #f8a192;
+    --apmss-light-red: #fba494;
     --apmss-light-yellow: #f4ee99;
 
 }
@@ -270,7 +270,7 @@ header {
 
 /* Main Content */
 main {
-    margin-top: 80px;
+    margin-top: 0px;
 }
 
 /* Hero Section Styles */
@@ -459,7 +459,7 @@ section {
 }
 
 .section-title {
-    font-size: 1.875rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--apmss-dark-gray);
     margin-bottom: 1.5rem;
@@ -468,22 +468,82 @@ section {
 
 @media (min-width: 768px) {
     .section-title {
-        font-size: 2.25rem;
+        font-size: 3rem;
     }
 }
 
 .main-title {
-    font-size: 2.25rem;
+    font-size: 18px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 2rem;
+    margin-top: 40px;
 }
 
 @media (min-width: 768px) {
     .main-title {
-        font-size: 3rem;
+        font-size: 27px;
     }
 }
+
+.main-title-1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.main-title-2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
+}
+
+@media (min-width: 768px) {
+    .main-title-1 {
+        font-size: 3.5rem;
+    }
+}
+
+
+.main-title-3 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+}
+
+
+@media (min-width: 768px) {
+    .main-title-3 {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+}
+
+.page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3.5rem 1rem 1.5rem;
+    margin-top: 4.5rem; /* 避開 fixed header */
+}
+.page-title h1 {
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    font-size: clamp(1.75rem, 4.5vw + 0.75rem, 3.5rem);
+}
+@media (max-width: 480px) {
+    .page-title { padding-top: 4.25rem; margin-top: 3.75rem; }
+}
+
+
 
 .section h1 {
     font-size: 2.5rem;
@@ -582,6 +642,12 @@ section {
     margin-bottom: 1rem;
 }
 
+.accommodation-info-disclaimer p{
+    text-align: center;
+    margin-top: 1.0rem;
+    padding-top: 0.5rem;
+    opacity: 0.7;
+}
 
 .register-btn {
     background: linear-gradient(45deg, #38AEFB, #B0A3FF);
@@ -591,7 +657,8 @@ section {
     border-radius: 50px;
     display: inline-block;
     font-size: 1.2rem;
-    margin: 1.5rem 0;
+    margin-top: 1.2rem;
+    margin-bottom: 0.6rem;
     transition: all 0.3s ease;
 }
 
@@ -605,7 +672,7 @@ footer {
     background-color: #565656;
     color: #D1D1D1;
     padding: 3rem 2rem 1rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 /* Pricing Grid & Cards Styles */
@@ -708,6 +775,14 @@ footer {
 .footer-section p {
     margin: 0.5rem 0;
     line-height: 1.6;
+}
+
+.disclaimer {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #D1D1D1;
+    opacity: 0.7;
 }
 
 .footer-bottom {
