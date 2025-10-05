@@ -1,5 +1,8 @@
 # APMSS 2026 Website
 
+## 作者
+本網站由APMSS網管組組長 陳彥臻 建立，特別感謝 APMSS2026的全體人員 讓這個活動成為可能。
+
 ## 關於專案
 這是APMSS 2026（Asia-Pacific Medical Students' Symposium）亞太醫學生研討會的官方網站。本網站使用純HTML、CSS和JavaScript建立，無需額外的框架或套件。
 
