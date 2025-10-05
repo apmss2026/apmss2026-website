@@ -317,6 +317,7 @@ main {
 
 .hero-text {
     text-align: center;
+    justify-content: center;
 }
 
 @media (min-width: 1024px) {
@@ -406,6 +407,23 @@ main {
     font-weight: 700;
 }
 
+
+/* 讓首頁兩顆按鈕並排顯示 */
+.main-page-btn {
+    display: flex;          /* 使用彈性盒讓按鈕橫向排列 */
+    flex-wrap: wrap;        /* 螢幕窄時自動換行 */
+    align-items: center;
+    gap: 1rem;              /* 按鈕之間的間距 */
+}
+
+/* 移除在這個容器裡的按鈕的上下邊距 */
+.main-page-btn .more-info-button,
+.main-page-btn .register-btn1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
 .more-info-button {
     background: linear-gradient(135deg, var(--apmss-blue), var(--apmss-pink));
     color: var(--white);
@@ -418,9 +436,6 @@ main {
     box-shadow: var(--shadow-md);
     transition: transform 0.3s ease;
 }
-
-
-
 
 .more-info-button:hover {
     transform: scale(1.05);
@@ -599,8 +614,6 @@ section {
     border-radius: 50px;
     display: inline-block;
     font-size: 1.2rem;
-    margin-top: 1.2rem;
-    margin-bottom: 0.6rem;
     transition: all 0.3s ease;
 }
 
