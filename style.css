@@ -613,6 +613,7 @@ section {
     transition: all 0.3s ease;
     position: relative;
     left: 0px;
+    font-size: 1.1rem;
 }
 
 .learn-more-btn:hover {
@@ -627,7 +628,7 @@ section {
     padding: 1rem 2rem;
     border-radius: 50px;
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     transition: all 0.3s ease;
     font-weight: 600;
 }
@@ -728,7 +729,7 @@ section {
     padding: 1rem 2rem;
     border-radius: 50px;
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-top: 1.2rem;
     margin-bottom: 0.6rem;
     transition: all 0.3s ease;
