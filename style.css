@@ -327,22 +327,27 @@ main {
 }
 
 .hero-title {
-    font-size: 3.4rem;
+    font-size: 7rem;
     font-weight: 700;
     color: var(--white);
-    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2.4rem;
     line-height: 1.1;
 }
 
 @media (min-width: 768px) {
     .hero-title {
         font-size: 3.4rem;
+        margin-top: 0rem;
+        margin-bottom: 1.5rem;
     }
 }
 
 @media (min-width: 1024px) {
     .hero-title {
         font-size: 3.75rem;
+        margin-top: 0rem;
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -350,7 +355,7 @@ main {
     font-family: 'Courier New', monospace;
     font-size: 1.25rem;
     color: var(--apmss-green);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     min-height: 155px;
     font-weight: 600;
 }
@@ -358,6 +363,7 @@ main {
 @media (min-width: 768px) {
     .typewriter-container {
         font-size: 1.5rem;
+        margin-bottom: 2rem;
     }
 }
 
