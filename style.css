@@ -615,6 +615,7 @@ section {
     display: inline-block;
     font-size: 1.2rem;
     transition: all 0.3s ease;
+    font-weight: 600;
 }
 
 .register-btn1:hover {
@@ -695,6 +696,7 @@ section {
     margin-top: 1.2rem;
     margin-bottom: 0.6rem;
     transition: all 0.3s ease;
+    font-weight: 600;
 }
 
 .register-btn:hover {
