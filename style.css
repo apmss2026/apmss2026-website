@@ -527,6 +527,20 @@ section {
     }
 }
 
+.main-title-4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
+}
+
+@media (min-width: 768px) {
+    .main-title-4 {
+        font-size: 1.7rem;
+    }
+}
+
 
 .main-title-3 {
     font-size: 2rem;
