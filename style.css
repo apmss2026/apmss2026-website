@@ -281,7 +281,7 @@ main {
     position: relative;
     overflow: hidden;
     background: linear-gradient(135deg, rgba(56, 174, 251, 0.9), rgba(249, 171, 255, 0.9)), 
-                url('img/background.png') center/cover;
+                url('img/background.webp') center/cover;
 }
 
 .hero-content {
