@@ -132,6 +132,7 @@ header {
 .logo {
     height: 3rem;
     width: auto;
+    aspect-ratio: 979 / 472;
     transition: var(--transition);
 }
 
@@ -1225,6 +1226,20 @@ html {
     object-fit: cover;
 }
 
+/* Set aspect-ratio for each speaker to prevent layout shift */
+.keynote-card img[src="img/Speaker 1.webp"] {
+    aspect-ratio: 337 / 492;
+}
+.keynote-card img[src="img/Speaker 2.webp"] {
+    aspect-ratio: 512 / 718;
+}
+.keynote-card img[src="img/Speaker 3.webp"] {
+    aspect-ratio: 512 / 718;
+}
+.keynote-card img[src="img/Speaker 4.webp"] {
+    aspect-ratio: 480 / 600;
+}
+
 .keynote-card h3 {
     font-size: 1.6rem;
     font-weight: 600;
@@ -1289,6 +1304,20 @@ html {
     border-radius: var(--border-radius);
     margin-bottom: 0.75rem;
     object-fit: cover;
+}
+
+/* Set aspect-ratio for each speaker to prevent layout shift */
+.preview-card img[src="img/Speaker 1.webp"] {
+    aspect-ratio: 337 / 492;
+}
+.preview-card img[src="img/Speaker 2.webp"] {
+    aspect-ratio: 512 / 718;
+}
+.preview-card img[src="img/Speaker 3.webp"] {
+    aspect-ratio: 512 / 718;
+}
+.preview-card img[src="img/Speaker 4.webp"] {
+    aspect-ratio: 480 / 600;
 }
 
 .preview-card h4 {

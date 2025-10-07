@@ -133,9 +133,6 @@ function initLoading() {
     window.addEventListener('load', () => {
         if (loading) {
             loading.classList.add('fade-out');
-            setTimeout(() => {
-                loading.style.display = 'none';
-            }, 500);
         }
     });
 }
