@@ -8,6 +8,12 @@ class TypeWriter {
         this.txt = '';
         this.wordIndex = 0;
         this.wait = parseInt(wait, 10);
+
+        // Create the span element for the animation and append it once.
+        this.span = document.createElement('span');
+        this.span.className = 'typing-animation';
+        this.element.appendChild(this.span);
+
         this.type();
         this.isDeleting = false;
     }
@@ -22,7 +28,8 @@ class TypeWriter {
             this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
 
-        this.element.innerHTML = `<span class="typing-animation">${this.txt}</span>`;
+        // Update only the text content for better performance, preventing layout recalculations.
+        this.span.textContent = this.txt;
 
         let typeSpeed = 100;
 

@@ -127,6 +127,7 @@ header {
 
 .logo-container {
     flex-shrink: 0;
+    height: 3rem; /* Stabilize container height to prevent layout shift */
 }
 
 .logo {
