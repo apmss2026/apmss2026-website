@@ -9,11 +9,16 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
-    
-    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="style.css"></noscript>
+    <!-- Load fonts immediately to avoid deferred styling and CLS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <!-- Preload fonts resource -->
+    <link rel="preload" href="https://fonts.gstatic.com" as="font" type="font/woff2" crossorigin>
+
+    <!-- Preconnect to registration platform for faster connection setup -->
+    <link rel="preconnect" href="https://app.hi.events">
+
+    <!-- Load the main stylesheet synchronously -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Loading Screen -->
@@ -26,7 +31,8 @@
         <nav class="nav-container">
             <div class="nav-content">
                 <div class="logo-container">
-                    <img src="img/logo.webp" alt="APMSS 2026 Logo" class="logo">
+                    <!-- Reserve space for the logo to avoid CLS -->
+                    <img src="img/logo.webp" alt="APMSS 2026 Logo" class="logo" width="979" height="472">
                 </div>
 
                 <!-- Desktop Navigation -->
@@ -62,7 +68,8 @@
         <!-- Agenda Section -->
         <div class="agenda-container">
             <div class="main-title gradient-text"><h1>Agenda</h1></div>
-            <img src="img/agenda.webp" alt="APMSS 2026 Complete Schedule">
+            <!-- Reserve space for the agenda image to reduce CLS. Assumed 16:9 aspect ratio -->
+            <img src="img/agenda.webp" alt="APMSS 2026 Complete Schedule" width="1920" height="1080">
         </div>
     </main>
 
@@ -91,6 +98,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <!-- Defer the main script so it doesn't block rendering -->
+    <script src="js/main.js" defer></script>
 </body>
 </html>

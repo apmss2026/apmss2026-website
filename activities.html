@@ -9,11 +9,16 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
-    
-    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="style.css"></noscript>
+    <!-- Load fonts immediately to avoid deferred styling and CLS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <!-- Preload fonts resource -->
+    <link rel="preload" href="https://fonts.gstatic.com" as="font" type="font/woff2" crossorigin>
+
+    <!-- Preconnect to registration platform for faster connection setup -->
+    <link rel="preconnect" href="https://app.hi.events">
+
+    <!-- Load the main stylesheet synchronously -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Loading Screen -->
@@ -26,7 +31,8 @@
         <nav class="nav-container">
             <div class="nav-content">
                 <div class="logo-container">
-                    <img src="img/logo.webp" alt="APMSS 2026 Logo" class="logo">
+                    <!-- Reserve space for the logo to avoid CLS -->
+                    <img src="img/logo.webp" alt="APMSS 2026 Logo" class="logo" width="979" height="472">
                 </div>
 
                 <!-- Desktop Navigation -->
@@ -101,7 +107,8 @@
                 <h2 class="main-title-2 gradient-text">Keynote Lectures</h2>
                 <div class="keynote-grid">
                     <div class="keynote-card">
-                        <img src="img/Speaker 1.webp" alt="Keynote Speaker 1">
+                        <!-- Provide dimensions for the speaker image to reduce layout shifts -->
+                        <img src="img/Speaker 1.webp" alt="Keynote Speaker 1" width="337" height="492">
                         <div class="keynote-text">
                             <h3>Regenerative Medicine</h3>
                             <h4>Keynote Lecture&nbsp;1 &ndash; Research Fellow Guo Hung‑Chih (Academia Sinica, Taiwan)</h4>
@@ -109,7 +116,7 @@
                         </div>
                     </div>
                     <div class="keynote-card">
-                        <img src="img/Speaker 2.webp" alt="Keynote Speaker 2">
+                        <img src="img/Speaker 2.webp" alt="Keynote Speaker 2" width="512" height="718">
                         <div class="keynote-text">
                             <h3>Bioengineering</h3>
                             <h4>Keynote Lecture&nbsp;2 &ndash; Professor Hyo‑Soo Kim (Korea)</h4>
@@ -117,7 +124,7 @@
                         </div>
                     </div>
                     <div class="keynote-card">
-                        <img src="img/Speaker 3.webp" alt="Keynote Speaker 3">
+                        <img src="img/Speaker 3.webp" alt="Keynote Speaker 3" width="512" height="718">
                         <div class="keynote-text">
                             <h3>Precision Medicine</h3>
                             <h4>Keynote Lecture&nbsp;3 &ndash; Professor Kyung‑Hun Lee (Korea)</h4>
@@ -125,7 +132,7 @@
                         </div>
                     </div>
                     <div class="keynote-card">
-                        <img src="img/Speaker 4.webp" alt="Keynote Speaker 4">
+                        <img src="img/Speaker 4.webp" alt="Keynote Speaker 4" width="480" height="600">
                         <div class="keynote-text">
                             <h3>Medical Carbon Footprint</h3>
                             <h4>Keynote Lecture&nbsp;4 &ndash; Professor Eugenie Kayak (University&nbsp;of Melbourne, Australia)</h4>
@@ -168,6 +175,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <!-- Defer the main script so it doesn't block rendering -->
+    <script src="js/main.js" defer></script>
 </body>
 </html>

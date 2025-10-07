@@ -718,14 +718,34 @@ section {
     margin-top: 1.5rem;
 }
 
+/* On medium and larger screens, display accommodation photos side by side instead of stacking them vertically */
+@media (min-width: 1248px) {
+    .accommodation-images {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .accommodation-images img {
+        /* Limit each image to roughly half of the available width minus gap */
+        max-width: 48%;
+    }
+}
+
 .accommodation-images img {
     width: 100%;
     /* Constrain maximum width to keep images from overflowing the layout */
     max-width: 600px;
+    /* Preserve the original aspect ratio so images aren't cropped and always fully visible. 
+       The Mayer Inn photos are approximately 4:3, so specify this ratio to reserve space
+       and eliminate CLS without hardcoding width/height in the markup. */
+    aspect-ratio: 4 / 3;
+    height: auto;
+    /* Use contain so the entire image is visible within the reserved area */
+    object-fit: cover;
     border-radius: 10px;
     /* Soft shadow to match card styling */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-    object-fit: cover;
 }
 
 .register-btn {
