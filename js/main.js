@@ -122,13 +122,10 @@ function initHeaderScroll() {
     const header = document.querySelector('header');
     
     window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        const rate = scrolled * -0.5;
-        
-        if (scrolled > 100) {
-            header.style.backgroundColor = 'rgba(86, 86, 86, 0.95)';
+        if (window.pageYOffset > 100) {
+            header.classList.add('header-scrolled');
         } else {
-            header.style.backgroundColor = 'rgba(86, 86, 86, 0.9)';
+            header.classList.remove('header-scrolled');
         }
     });
 }

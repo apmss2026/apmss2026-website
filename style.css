@@ -94,10 +94,14 @@ header {
     left: 0;
     right: 0;
     z-index: 50;
-    background: var(--header-bg);
+    background: rgba(86, 86, 86, 0.9); /* Default unscrolled state */
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    transition: var(--transition);
+    transition: background-color 0.3s ease;
+}
+
+header.header-scrolled {
+    background: rgba(86, 86, 86, 0.95); /* Scrolled state */
 }
 
 .nav-container {
@@ -165,6 +169,7 @@ header {
     cursor: pointer;
     transition: var(--transition);
     text-decoration: none;
+    min-height: 2rem; /* Stabilize button height to prevent CLS */
 }
 
 .nav-button:hover {
@@ -358,7 +363,7 @@ main {
     font-size: 1.25rem;
     color: var(--apmss-green);
     margin-bottom: 1rem;
-    min-height: 155px;
+    min-height: 8.5rem; /* Reserve space for 4 lines of text to prevent CLS */
     font-weight: 600;
 }
 
