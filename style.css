@@ -1369,3 +1369,61 @@ html {
     transition: var(--transition);
     margin: 3px 0;
 }
+
+/*
+ * Partner Banner Section
+ *
+ * Styles to present the Federation of Medical Students in Taiwan (FMS‑TW)
+ * banner on both the introduction section and the footer. Images are
+ * responsive, maintaining aspect ratios across devices. Captions are
+ * centered and integrate with the site’s typographic scale. The
+ * accompanying media query limits the banner width on larger screens to
+ * prevent it from becoming too dominant.
+ */
+
+.partner-banner-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.partner-figure {
+    max-width: 90%;
+    text-align: center;
+}
+
+.partner-banner {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+    border-radius: var(--border-radius);
+}
+
+.partner-caption {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: var(--apmss-dark-gray);
+}
+
+@media (min-width: 768px) {
+    .partner-banner {
+        max-width: 80%;
+    }
+}
+
+/* Footer partners container for the FMS banner */
+.footer-partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.footer-partner-banner {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+    border-radius: var(--border-radius);
+}
